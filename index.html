@@ -1,12 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackaton 2025</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop au Gaspillage !</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <header>
+        <h1>Stop au Gaspillage !</h1>
+        <p>Un repas sauvé, un pas vers demain.</p>
+        <nav>
+            <a href="index.html">🏠 Accueil</a>
+            <a href="equipe-technos.html">👥 Équipe & Technologies</a>
+          </nav>
+          
+    </header>
     
-    <h1>hello world</h1>
+    <main>
+        <section class="poster-section">
+            <h2>🎨 Notre Affiche de Campagne</h2>
+            <div class="poster-container">
+                <img src="./affiches/affiche-2.png" alt="Affiche de la campagne" id="poster-img" />
+            </div>
+            
+            <div id="img-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img-fullscreen">
+            </div>
+        </section>
+        
+        
+        <section class="quiz-section">
+            <h2>Quizz : Es-tu un.e anti-gaspi ?</h2>
+            <div id="quiz-container">
+                <p id="question">Chargement...</p>
+                <div id="answers"></div>
+                <button id="next-btn" onclick="nextQuestion()">Suivant</button>
+            </div>
+        </section>
+        
+        <section class="tips-section">
+            <h2>💡 Astuces anti-gaspi</h2>
+            <ul>
+                <li>Congèle tes restes pour plus tard.</li>
+                <li>Planifie tes repas avant d’aller faire les courses.</li>
+                <li>Apprends à interpréter les dates de péremption.</li>
+                <li>Transforme les légumes fatigués en soupe ou en purée.</li>
+            </ul>
+        </section>
+        
+        
+    </main>
+    
+    <footer>
+        <p>Campagne créée pour le Hackathon IA For Good 2024-2025</p>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f7f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #2e7d32;
+}
+
+header p {
+    font-style: italic;
+    color: #388e3c;
+}
+
+.quiz-section,
+.tips-section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.tips-section  ul {
+    margin: 10px 0 0 4rem;
+}
+
+#quiz-container {
+    margin-top: 15px;
+}
+
+#question {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+#answers button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background: #81c784;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#answers button:hover {
+    background: #66bb6a;
+}
+
+#next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #43a047;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: none;
+}
+
+
+
+.poster-section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.poster-section h2 {
+    font-size: 1.5em;
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.poster-container {
+    display: flex;
+    justify-content: center;
+}
+
+.poster-container img {
+    max-height: 80vh; /* limite la hauteur à 80% de l’écran */
+    width: auto;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+.poster-container img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+
+/* equipe et technos */
+.team-section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.team-section h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.team-section ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* technologies */
+.tech-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    text-align: center;
+}
+
+.tech-logos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+}
+
+.tech-logos img {
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.tech-logos img[src*="mistral"] {
+    width: 100px;
+}
+
+.tech-logos img[src*="chatgpt"] {
+    width: 65px;
+}
+
+.tech-logos img:not([src*="mistral"]):not([src*="chatgpt"]) {
+    width: 80px;
+}
+
+.tech-logos img:hover {
+    transform: scale(1.1);
+}
+
+.tech-logos p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+
+
+/* nav bar */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+    background-color: #e8f5e9;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #c8e6c9;
+    color: #1b5e20;
+}
